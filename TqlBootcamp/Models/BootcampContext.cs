@@ -10,6 +10,7 @@ namespace TqlBootcamp.Models
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<Assessment> Assessments { get; set; }
+        public DbSet<AssessmentScore> AssessmentScores { get; set; }
 
         //sets up sql server w our connection string
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
